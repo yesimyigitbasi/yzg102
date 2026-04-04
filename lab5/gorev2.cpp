@@ -1,0 +1,51 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n = 100;
+
+    // int list with 100 random elements:
+    int sayilar[100] = {  9,  4,  7,  6,  0, 15, 13, 18, 11, 12, 
+                        25, 23, 28, 21, 22, 35, 33, 38, 31, 32, 
+                        45, 43, 48, 41, 42, 55, 53, 58, 51, 52,
+                        65, 63, 68, 61, 62, 75, 73, 78, 71, 72,
+                        85, 83, 88, 81, 82, 95, 93, 98, 91, 92, 
+                        105, 103, 108, 101, 102, 115, 113, 118, 111, 112, 
+                        125, 123, 128, 121, 122, 135, 133, 138, 131, 132,
+                        145, 143, 148, 141, 142, 155, 153, 158, 151, 152, 
+                        165, 163, 168, 161, 162, 175, 173, 178, 171, 172,
+                        185, 183, 188, 181, 182, 195, 193, 198, 191, 192 
+                        };
+
+    int ara;
+    cout << "Aranacak sayi: ";
+    cin >> ara;
+
+    // doğrusal arama
+    int index;
+    for (int i = 0; i < n; i++) {
+        if (sayilar[i] == ara) {
+            index = i;
+            cout << "Sayi bulundu. Indeks: " << index << endl;
+            break;
+        }
+    }   
+
+    // Bubble Sort
+    for (int i = 0; i < n - 1; i++) {
+        for (int j = 0; j < n - i - 1; j++) {
+            if (sayilar[j] > sayilar[j + 1]) {
+                int temp = sayilar[j];
+                sayilar[j] = sayilar[j + 1];
+                sayilar[j + 1] = temp;
+            }
+        }
+    }
+
+    // print sorted list
+    cout << "Siralanmis sayilar: ";
+    for (int i = 0; i < n; i++) {
+        cout << sayilar[i] << ", ";
+    }
+
+}
