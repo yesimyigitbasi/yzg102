@@ -15,6 +15,6 @@ int main() {
     int dizi[] = {3, 17, 5, 22, 9};
     int kucuk, buyuk;
     minMaxBul(dizi, 5, &kucuk, &buyuk);
-    cout << "Min: " << &kucuk << "  Max: " << &buyuk << endl;
+    cout << "Min: " << kucuk << "  Max: " << buyuk << endl;
 }
 
