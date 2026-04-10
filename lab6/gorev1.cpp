@@ -14,14 +14,18 @@ int main() {
 
     // 3
     cout << "x = " << x << "  &x = " << &x << endl;  
-    cout << "*ptrX = " << *ptrX << " ptr = " << ptrX << endl;            
+    cout << "*ptrX = " << *ptrX << " ptr = " << ptrX << endl;      
+    cout << "d = " << d << "  &d = " << &d << endl;  
+    cout << "*ptrD = " << *ptrD << " ptr = " << ptrD << endl;        
+    cout << "c = " << c << "  &c = " << &c << endl;  
+    cout << "*ptrC = " << *ptrC << " ptr = " << ptrC << endl;        
 
     //4
     *ptrX = 99;            
     cout << "*ptr degisitirildikten sonra x: " << x << endl;
 
     //5
-    cout << "sizeof(int) = "  << sizeof(int)    << endl;
-    cout << "sizeof(int*) = " << sizeof(int*)   << endl;  
+    cout << "sizeof(int) = "  << sizeof(x)    << endl;
+    cout << "sizeof(int*) = " << sizeof(ptrX)   << endl;  
     return 0;
 }
