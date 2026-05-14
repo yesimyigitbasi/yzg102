@@ -1,0 +1,7 @@
+•	s2 = s1 atandığında grade pointer'ı kopyalanır.
+
+•	*s2.grade = 50 yazdığında s1.grade da değişir, neden açıklayın?
+Cevap:
+
+•	Program bitişinde hangi hata oluşur?
+Cevap:
